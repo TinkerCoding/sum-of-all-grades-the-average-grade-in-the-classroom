@@ -1,1 +1,59 @@
+//////////First Method//////////
 
+
+1. The sum of all grades.
+ 
+ /**
+ *@param {array} grades
+ */
+ export function getSumOfGrades(grades) {
+    let sum  = 0
+    grades.forEach(function(grade) {
+        sum = sum + grade
+        })
+        return sum
+ }
+ 
+ 
+ 2. The average grade in the classroom.
+ 
+ /**
+ *param {array} grades
+ */
+ export function getAverageGrade(grades){
+         let sum  = 0
+         grades.forEach(function(grade){
+         sum = sum + grade
+         })
+         return sum / grades.length
+       }
+       
+       
+//////////Second Method//////////
+
+
+1. The sum of all grades.
+
+/**
+*@param {array} grades
+*/
+export function getSumOfGrades(grades){
+     let sum  = 0
+     grades.forEach(function(grade){
+         sum = sum + grade
+     })
+     return sum 
+ }
+ 
+ 
+ 2. The average grade in the classroom.
+ 
+ /**
+ *@param{array} grades
+ */
+ export function getAverageGrade(grades){
+ return  getSumOfGrades(grades) / grades.length
+ }
+ 
+ 
+ 
